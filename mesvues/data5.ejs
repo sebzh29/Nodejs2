@@ -1,0 +1,16 @@
+<header>  
+    <%- include('partials/header'); %>
+</header>  
+<main>
+    <div class="jumbotron">
+        <h1>ARTICLES</h1>
+        <hr>
+        <% if ( locals.article) { %>
+            <% article.forEach(function(article) { %>
+                <h2><%= article.nom %></h2>
+                    <p><%= article.description %></p>
+                        <p><a href='./modif-article/<%= article.id %>'>modif</a></p>
+            <% }) %>
+        <% } %>
+    </div>
+</main>

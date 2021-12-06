@@ -1,0 +1,14 @@
+<header>  
+    <%- include('partials/header'); %>
+</header>  
+<main>
+    <div>
+        <h1>ARTICLES</h1>
+        <hr>
+        <% if ( locals.article) { %>
+            <% article.forEach(function(article) { %>
+                <p><%= article.nom %> <%= article.description %> <%= article.prix %>€</p>
+            <% }) %>
+        <% } %>
+    </div>
+</main>

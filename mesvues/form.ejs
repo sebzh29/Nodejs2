@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+   <%- include('partials/head'); %>
+</head>
+
+<body class="container">
+
+<header>  
+    <%- include('partials/header'); %>
+</header>      
+
+
+<main>
+    <div class="jumbotron">
+        <h1>formulaire</h1>
+    </div>
+    <form action="addarticle" method="post">
+        Nom :<br>
+        <input type="text" id="nom"  name="nom"/><br>
+        Description :<br>
+        <input type="text" id="description" name="description"/><br>
+        Prix :<br>
+        <input type="number" step="0.10" id="prix" name="prix"/><br>
+        <br>
+        <input type="submit" value="enregistrer">
+    </form>
+</main>
+</body>
+
+<footer>
+    <%- include('partials/footer'); %>
+</footer>
+
+</html>

@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+   <%- include('partials/head'); %>
+</head>
+
+<body class="container">
+
+<header>  
+    <%- include('partials/header'); %>
+</header>      
+
+
+<main>
+    <div class="jumbotron">
+        <h1>AFPA 2021</h1>
+        <p>Welcome to les futurs DevOps</p>
+        <% if (locals.result1) { %>
+            <p>result1:<%= result1 %></p>
+        <% } %>
+        <% if (locals.result2) { %>
+            <p>result2:<%= result2 %> </p>
+        <% } %>
+
+    </div>
+</main>
+
+<footer>
+    <%- include('partials/footer'); %>
+</footer>
+
+</body>
+
+</html>
